@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.roboto-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-style: normal;
+  background-color: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 48px;
+}
+
+.Logo img{
+  display: flex;
+  width: auto;
+  height: 40px;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;   /* 垂直置中 */
+  justify-content: flex-end;  /* 靠右對齊 */
+  gap: 20px;  /* 搜尋框與按鈕之間的距離 */
+  position: absolute;
+  top: 30px;
+  right: 46px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 4px 20px;
+  background-color: transparent;
+}
+
+.search img {
+  display: flex;
+  width: 28px;
+  height: 28px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 16px;
+  caret-color: white; /* 使游標顏色變白 */
+}
+
+.ticket-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 20px;  /* 增加內邊距，讓按鈕更美觀 */
+  border: 2px solid white;
+  border-radius: 30px;
+  color: black;  /* 初始黑色文字 */
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;  /* 初始為白色實心 */
+  text-decoration: none;
+  transition: all 0.3s ease;  /* 平滑過渡效果 */
+  gap: 10px;
+}
+
+.ticket-button:hover {
+  background-color: transparent;  /* 懸停時背景透明 */
+  color: white;  /* 文字變為白色 */
+  border: 2px solid white;  /* 白色邊框保持不變 */
+}
+
+.side-menu {
+  position: absolute;
+  top: 150px;
+  right: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  font-size: 18px;
+  gap: 10px;
+}
+
+
+.side-menu a {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: auto;
+  padding-right: 20px; /* 調整右邊距對齊 */
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+.side-menu a.active {
+  font-weight: bold;
+}
+.side-menu .dot {
+  color: white;
+  margin-left: 10px;
+}
+.side-menu .line {
+  height: 50px;
+  width: 1px;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #ffffff;
+}
+
+.page-title {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 280px;
+  animation: slideIn 2s ease-out forwards;
+}
+
+.page-title h3{
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  color: #ffffff;
+  padding-top: 390px;
+  line-height: 38px;
+}
+
+.page-title h1{
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  color: #ffffff;
+  width: 1000px;
+  line-height: 128px;
+  padding-top: 30px;
+}
+
+.content-list {
+  display: grid;
+}
+
+.tabline {
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 0px;
+  margin-bottom: 30px;  
+}
+
+.tab-title {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  padding-bottom: 100px;
+}
+
+.tab-title a {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.grid{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 500px;
+  
+}
+
+.grid img {
+  width: 964px;
+  padding-left: 120px;
+  margin-right: 100px;
+}
+
+.tab-info {
+  animation: bounce 1s ease-out forwards;
+}
+
+.box-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+	border: 2px solid #d3dee7;
+  height: 140px;
+  width: 660px;
+  margin-bottom: 30px;
+  margin-right: 120px;
+  text-align: center;
+}
+.box-a h3{
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 38px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.box-a p {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 28px;
+}
+
+.tab-info2 {
+  display: flex;
+  justify-content: center;
+  width: 660px;
+  padding-left: 20px;
+}
+
+.tab-info2 p{
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 28px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 500px;
+  animation: bounce 1.5s infinite;  /* 讓箭頭有跳動效果 */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(10px);
+  }
+  60% {
+      transform: translateY(5px);
+  }
+}
+
+.ticket-price {
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+
+  gap: 100px;
+}
+.backgroundimage {
+  width: auto; /* 設置寬度 */
+  height: 1300px; /* 設置高度 */
+  background-image: url('images/ticketprice-bg.png'); /* 替換為你的圖片路徑 */
+  background-position: top; /* 圖片居中對齊 */
+  background-repeat: no-repeat; /* 防止圖片重複 */
+}
+.priceinfo {
+  width: 900px;
+
+}
+
+.priceinfo h2{
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  color: #ffffff;
+  line-height: 88px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.priceinfo p {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 28px;
+  padding-bottom: 50px;
+}
+
+.priceinfo2 {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 28px;
+  padding-bottom: 50px;
+}
+
+.side-divider {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.divider2 {
+  border: 0;
+  border-top: 1px solid #ffffff;
+}
+
+.footer-image {
+  position: relative;
+  width: 100%;
+  height: 1140px;  /* 設置圖片容器高度 */
+  overflow: hidden;  /* 確保圖片不會超出容器 */
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.footer-background {
+  width: 100%;
+  height: 10%;  /* 控制圖片高度 */
+  opacity: 0.5;  /* 調整透明度 */
+  z-index: -1;   /* 確保背景不遮擋內容 */
+}
+
+.footer-content img {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111;
+  color: white;
+}
+
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-300%); /* 從頁面左側開始 */
+  }
+  to {
+      transform: translateX(0); /* 移動到原始位置 */
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.roboto-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-style: normal;
+  background-color: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 48px;
+}
+
+.Logo img{
+  display: flex;
+  width: auto;
+  height: 40px;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;   /* 垂直置中 */
+  justify-content: flex-end;  /* 靠右對齊 */
+  gap: 20px;  /* 搜尋框與按鈕之間的距離 */
+  position: absolute;
+  top: 30px;
+  right: 46px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 4px 20px;
+  background-color: transparent;
+}
+
+.search img {
+  display: flex;
+  width: 28px;
+  height: 28px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 16px;
+  caret-color: white; /* 使游標顏色變白 */
+}
+
+.ticket-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 20px;  /* 增加內邊距，讓按鈕更美觀 */
+  border: 2px solid white;
+  border-radius: 30px;
+  color: black;  /* 初始黑色文字 */
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;  /* 初始為白色實心 */
+  text-decoration: none;
+  transition: all 0.3s ease;  /* 平滑過渡效果 */
+  gap: 10px;
+}
+
+.ticket-button:hover {
+  background-color: transparent;  /* 懸停時背景透明 */
+  color: white;  /* 文字變為白色 */
+  border: 2px solid white;  /* 白色邊框保持不變 */
+}
+
+.side-menu {
+  position: absolute;
+  top: 150px;
+  right: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  font-size: 18px;
+  gap: 10px;
+}
+
+
+.side-menu a {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: auto;
+  padding-right: 20px; /* 調整右邊距對齊 */
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+.side-menu a.active {
+  font-weight: bold;
+}
+.side-menu .dot {
+  color: white;
+  margin-left: 10px;
+}
+.side-menu .line {
+  height: 50px;
+  width: 1px;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #ffffff;
+}
+
+.page-title {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 200px;
+  animation: slideIn 2s ease-out forwards;
+}
+
+.page-title h3{
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  color: #ffffff;
+  padding-top: 390px;
+  line-height: 38px;
+}
+
+.page-title h1{
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  color: #ffffff;
+  width: 1000px;
+  line-height: 128px;
+  padding-top: 30px;
+}
+
+.container {
+  margin: 120px;
+}
+
+.slider-wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+}
+
+.slider{
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling functionality */
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 30px;
+}
+
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  width: 1800px;
+  height: 800px;
+  padding-bottom: 40px;
+}
+
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  top: 1040px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.slider-nav a{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+  opacity: 0;
+}
+
+.slider-image h2{
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  color: #ffffff;
+  line-height: 88px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.slider-image p{
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 28px;
+  padding-bottom: 15px;
+}
+
+.divider2 {
+  border: 0;
+  border-top: 1px solid #ffffff;
+}
+
+.footer-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/footer.png');
+  background-size: cover;  /* 拉伸並覆蓋整個容器 */
+  background-position: center;  /* 圖片置中 */
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+
+.footer-background {
+  width: 100%;
+  height: 10%;  /* 控制圖片高度 */
+  opacity: 0.5;  /* 調整透明度 */
+  z-index: -1;   /* 確保背景不遮擋內容 */
+}
+
+.footer-content img {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111;
+  color: white;
+}
+
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-300%); /* 從頁面左側開始 */
+  }
+  to {
+      transform: translateX(0); /* 移動到原始位置 */
+  }
+}
+
+.spotlight-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 40%);
+  transition: background 0.1s ease-out;
+}
